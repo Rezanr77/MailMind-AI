@@ -1,0 +1,1621 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MailMind AI — Write Smarter Emails in Seconds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CHANGE "favicon.ico" to your own logo filename e.g. href="logo.png" -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+          </div>
+          MailMind<span style="color: var(--indigo-soft)">AI</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="theme-btn" id="themeBtn" title="Toggle theme">
+            <svg
+              id="sunIcon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg
+              id="moonIcon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <a href="#pricing" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 8px">
+          <button
+            class="theme-btn"
+            id="themeBtnMobile"
+            onclick="document.getElementById('themeBtn').click()"
+          >
+            <svg
+              id="sunIconM"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg
+              id="moonIconM"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#how">How It Works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a
+        href="#pricing"
+        class="btn btn-primary"
+        style="width: 100%; justify-content: center"
+        >Get Started</a
+      >
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-orb-1"></div>
+        <div class="hero-orb-2"></div>
+        <div class="hero-orb-3"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="fade-up">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              Now with GPT-4o · Trusted by 50,000+ professionals
+            </div>
+            <h1 class="hero-h1">
+              Your inbox.<br /><span class="grad-text">Answered by AI.</span
+              ><br />In seconds.
+            </h1>
+            <p class="hero-sub">
+              MailMind AI reads your emails, understands context, and drafts
+              perfect replies — so you can focus on work that actually matters.
+            </p>
+            <div class="hero-btns">
+              <a
+                href="#pricing"
+                class="btn btn-primary"
+                style="padding: 14px 32px; font-size: 16px"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+                Start Free — No Card Needed
+              </a>
+              <a
+                href="#features"
+                class="btn btn-outline"
+                style="padding: 14px 32px; font-size: 16px"
+                >See How It Works</a
+              >
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <span class="hero-stat-num">3.2<span>hrs</span></span
+                ><span class="hero-stat-label">saved per day</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat-num">98<span>%</span></span
+                ><span class="hero-stat-label">reply accuracy</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat-num">50<span>k+</span></span
+                ><span class="hero-stat-label">active users</span>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-wrap scale-in">
+            <div class="mockup-glow"></div>
+            <div class="mockup">
+              <div class="mockup-header">
+                <div class="mockup-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="mockup-title">MailMind AI — Inbox</span>
+              </div>
+              <div class="mockup-body">
+                <div class="email-item active">
+                  <div
+                    class="email-avatar"
+                    style="background: rgba(79, 70, 229, 0.2); color: #6366f1"
+                  >
+                    SC
+                  </div>
+                  <div class="email-meta">
+                    <div class="email-meta-row">
+                      <span class="email-sender">Sarah Chen</span
+                      ><span class="email-time">2m ago</span>
+                    </div>
+                    <div class="email-subject">Q4 Partnership Proposal</div>
+                    <div class="email-preview">
+                      Hi, I wanted to follow up on our discussion...
+                    </div>
+                    <div class="ai-chip">
+                      <svg
+                        width="10"
+                        height="10"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                      </svg>
+                      AI Reply Ready
+                    </div>
+                  </div>
+                </div>
+                <div class="email-item">
+                  <div
+                    class="email-avatar"
+                    style="background: rgba(16, 185, 129, 0.2); color: #10b981"
+                  >
+                    MJ
+                  </div>
+                  <div class="email-meta">
+                    <div class="email-meta-row">
+                      <span class="email-sender">Marcus J.</span
+                      ><span class="email-time">1h ago</span>
+                    </div>
+                    <div class="email-subject">Budget Review — Urgent</div>
+                    <div class="email-preview">
+                      Can we schedule a quick call to discuss...
+                    </div>
+                  </div>
+                </div>
+                <div class="ai-reply-box">
+                  <div class="ai-reply-label">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                    AI Draft
+                  </div>
+                  <div class="ai-reply-text">
+                    Hi Sarah, thank you for following up on the Q4 partnership
+                    proposal. I've reviewed the terms and I'm excited about the
+                    potential collaboration. Could we schedule a 30-minute call
+                    this week to discuss the next steps?<span
+                      class="cursor"
+                    ></span>
+                  </div>
+                  <div class="mockup-actions">
+                    <button class="action-btn action-send">Send Reply</button>
+                    <button class="action-btn action-edit">Edit First</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section class="social-proof">
+      <div class="logos-track">
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #0052cc">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <rect width="24" height="24" rx="4" />
+            </svg>
+          </div>
+          Atlassian
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #4a154b">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <path
+                d="M5.04 15.04a2.04 2.04 0 1 1 0 4.08 2.04 2.04 0 0 1 0-4.08z"
+              />
+            </svg>
+          </div>
+          Slack
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #0061ff">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              />
+            </svg>
+          </div>
+          Dropbox
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #ff5722">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+          </div>
+          Asana
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #000000">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <rect x="2" y="2" width="20" height="20" rx="3" />
+            </svg>
+          </div>
+          Notion
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #5865f2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+          </div>
+          Discord
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #0a66c2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </div>
+          LinkedIn
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #1da1f2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.28 0a4.5 4.5 0 0 0-4.5 4.5c0 .35.04.7.11 1.03A12.8 12.8 0 0 1 1.64.89a4.5 4.5 0 0 0 1.4 6 4.5 4.5 0 0 1-2.04-.56v.06a4.5 4.5 0 0 0 3.62 4.41 4.5 4.5 0 0 1-2.03.08 4.51 4.51 0 0 0 4.2 3.12A9 9 0 0 1 1 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.39-.01-.58A9.16 9.16 0 0 0 23 3z"
+              />
+            </svg>
+          </div>
+          Twitter
+        </div>
+        <!-- duplicate for seamless loop -->
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #0052cc">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <rect width="24" height="24" rx="4" />
+            </svg>
+          </div>
+          Atlassian
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #4a154b">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <path
+                d="M5.04 15.04a2.04 2.04 0 1 1 0 4.08 2.04 2.04 0 0 1 0-4.08z"
+              />
+            </svg>
+          </div>
+          Slack
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #0061ff">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            </svg>
+          </div>
+          Dropbox
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #ff5722">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+          </div>
+          Asana
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #000000">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <rect x="2" y="2" width="20" height="20" rx="3" />
+            </svg>
+          </div>
+          Notion
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #5865f2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+          </div>
+          Discord
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #0a66c2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </div>
+          LinkedIn
+        </div>
+        <div class="logo-item">
+          <div class="logo-icon" style="background: #1da1f2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.28 0a4.5 4.5 0 0 0-4.5 4.5c0 .35.04.7.11 1.03A12.8 12.8 0 0 1 1.64.89a4.5 4.5 0 0 0 1.4 6 4.5 4.5 0 0 1-2.04-.56v.06a4.5 4.5 0 0 0 3.62 4.41 4.5 4.5 0 0 1-2.03.08 4.51 4.51 0 0 0 4.2 3.12A9 9 0 0 1 1 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.39-.01-.58A9.16 9.16 0 0 0 23 3z"
+              />
+            </svg>
+          </div>
+          Twitter
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="text-center fade-up">
+          <div class="section-label">Features</div>
+          <h2 class="section-title">
+            Everything your inbox<br />has been missing
+          </h2>
+          <p class="section-sub">
+            Six AI-powered tools that turn email from a burden into a
+            competitive advantage.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card fade-up" style="transition-delay: 0.1s">
+            <div
+              class="feature-icon"
+              style="background: rgba(99, 102, 241, 0.12)"
+            >
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#6366F1"
+                stroke-width="2"
+              >
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h3>Smart Email Replies</h3>
+            <p>
+              AI reads the full thread context and crafts replies that sound
+              exactly like you — your tone, your style, your intent.
+            </p>
+            <span
+              class="feature-tag"
+              style="background: rgba(99, 102, 241, 0.1); color: #6366f1"
+              >Core</span
+            >
+          </div>
+          <div class="feature-card fade-up" style="transition-delay: 0.15s">
+            <div
+              class="feature-icon"
+              style="background: rgba(16, 185, 129, 0.12)"
+            >
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#10B981"
+                stroke-width="2"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            </div>
+            <h3>Auto-Summaries</h3>
+            <p>
+              Long email chains distilled into 3-bullet summaries. Know what
+              matters without reading 40 back-and-forths.
+            </p>
+            <span
+              class="feature-tag"
+              style="background: rgba(16, 185, 129, 0.1); color: #10b981"
+              >Core</span
+            >
+          </div>
+          <div class="feature-card fade-up" style="transition-delay: 0.2s">
+            <div
+              class="feature-icon"
+              style="background: rgba(14, 165, 233, 0.12)"
+            >
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#0EA5E9"
+                stroke-width="2"
+              >
+                <path
+                  d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                />
+                <path
+                  d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                />
+              </svg>
+            </div>
+            <h3>Tone Rewriting</h3>
+            <p>
+              Switch from casual to boardroom-ready in one click. Five tone
+              modes: Professional, Friendly, Direct, Diplomatic, Assertive.
+            </p>
+            <span
+              class="feature-tag"
+              style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9"
+              >Core</span
+            >
+          </div>
+          <div class="feature-card fade-up" style="transition-delay: 0.25s">
+            <div
+              class="feature-icon"
+              style="background: rgba(244, 63, 94, 0.12)"
+            >
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#F43F5E"
+                stroke-width="2"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+            </div>
+            <h3>Inbox Prioritization</h3>
+            <p>
+              AI scores every email by urgency, sender importance, and required
+              action. Your actual priorities — surfaced automatically.
+            </p>
+            <span
+              class="feature-tag"
+              style="background: rgba(244, 63, 94, 0.1); color: #f43f5e"
+              >Advanced</span
+            >
+          </div>
+          <div class="feature-card fade-up" style="transition-delay: 0.3s">
+            <div
+              class="feature-icon"
+              style="background: rgba(99, 102, 241, 0.12)"
+            >
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#6366F1"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+            </div>
+            <h3>Multi-Language Support</h3>
+            <p>
+              Reply in 32 languages without leaving your inbox. Auto-detects the
+              sender's language and matches it seamlessly.
+            </p>
+            <span
+              class="feature-tag"
+              style="background: rgba(99, 102, 241, 0.1); color: #6366f1"
+              >Advanced</span
+            >
+          </div>
+          <div class="feature-card fade-up" style="transition-delay: 0.35s">
+            <div
+              class="feature-icon"
+              style="background: rgba(16, 185, 129, 0.12)"
+            >
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#10B981"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                />
+              </svg>
+            </div>
+            <h3>AI Chat Assistant</h3>
+            <p>
+              Ask your inbox anything. "Find all emails from Mark about the
+              budget." "Summarize last week's client threads."
+            </p>
+            <span
+              class="feature-tag"
+              style="background: rgba(16, 185, 129, 0.1); color: #10b981"
+              >Advanced</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section class="screenshots" id="screenshots">
+      <div class="container">
+        <div class="text-center fade-up">
+          <div class="section-label">Product</div>
+          <h2 class="section-title">See it in action</h2>
+          <p class="section-sub">
+            Every feature designed for real workflows, not demos.
+          </p>
+        </div>
+        <div class="screenshots-tabs">
+          <button class="tab-btn active" onclick="switchTab(this, 'compose')">
+            AI Compose
+          </button>
+          <button class="tab-btn" onclick="switchTab(this, 'chat')">
+            Chat Assistant
+          </button>
+          <button class="tab-btn" onclick="switchTab(this, 'templates')">
+            Templates
+          </button>
+        </div>
+        <div class="scale-in">
+          <div class="screenshot-display">
+            <div class="screenshot-bar">
+              <div class="mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span
+                style="
+                  font-size: 12px;
+                  color: var(--text-muted);
+                  flex: 1;
+                  text-align: center;
+                "
+                >MailMind AI — Compose</span
+              >
+            </div>
+            <div class="screenshot-content" id="tabContent">
+              <div class="ss-email-compose">
+                <div class="ss-field">
+                  <div class="ss-label">To</div>
+                  <input
+                    class="ss-input form-input"
+                    value="sarah.chen@acme.com"
+                    readonly
+                  />
+                </div>
+                <div class="ss-field">
+                  <div class="ss-label">Subject</div>
+                  <input
+                    class="ss-input form-input"
+                    value="Re: Q4 Partnership Proposal"
+                    readonly
+                  />
+                </div>
+                <div class="ss-field">
+                  <div class="ss-label">Your message</div>
+                  <textarea class="ss-input ss-textarea form-input" readonly>
+Hi Sarah, thank you for following up on the Q4 partnership proposal. I've reviewed the initial terms and I'm genuinely excited about what we could build together. Could we schedule a 30-minute call this Thursday or Friday to walk through the specifics?</textarea
+                  >
+                </div>
+                <div class="ai-suggest">
+                  <div class="ai-suggest-label">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                    AI Suggestion
+                  </div>
+                  <div class="ai-suggest-text">
+                    Tone detected: Professional & Collaborative. Confidence:
+                    97%. Alternative: add specific agenda items to increase
+                    reply rate by ~34%.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="benefits-inner">
+          <div class="fade-up">
+            <div class="section-label">Benefits</div>
+            <h2 class="section-title">
+              Stop managing email.<br />Start
+              <span class="grad-text">doing work.</span>
+            </h2>
+            <p style="color: var(--text-muted); margin-bottom: 12px">
+              The average professional spends 4.1 hours daily on email. MailMind
+              AI cuts that to under an hour — without missing anything.
+            </p>
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <div class="benefit-check">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <div class="benefit-text">
+                  <h4>Save 3+ hours every single day</h4>
+                  <p>
+                    AI handles the drafting, summarizing, and prioritizing — you
+                    just review and send.
+                  </p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-check">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <div class="benefit-text">
+                  <h4>Never miss a critical email again</h4>
+                  <p>
+                    Priority scoring ensures your most important messages are
+                    always front and center.
+                  </p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-check">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <div class="benefit-text">
+                  <h4>Write better emails, automatically</h4>
+                  <p>
+                    Tone analysis and smart suggestions make every message
+                    clear, concise, and effective.
+                  </p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-check">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <div class="benefit-text">
+                  <h4>Works with Gmail & Outlook</h4>
+                  <p>
+                    One-click connect. No migration, no new app to learn — it
+                    lives right inside your existing inbox.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fade-up" style="transition-delay: 0.2s">
+            <div class="benefit-stats-grid">
+              <div class="benefit-stat-card">
+                <div class="num grad-text">3.2h</div>
+                <div class="label">Average time saved per day</div>
+              </div>
+              <div class="benefit-stat-card">
+                <div class="num" style="color: var(--emerald)">98%</div>
+                <div class="label">Reply accuracy rate</div>
+              </div>
+              <div class="benefit-stat-card">
+                <div class="num" style="color: var(--sky)">32</div>
+                <div class="label">Languages supported</div>
+              </div>
+              <div class="benefit-stat-card">
+                <div class="num" style="color: var(--rose)">50k+</div>
+                <div class="label">Professionals using daily</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how">
+      <div class="container">
+        <div class="text-center fade-up">
+          <div class="section-label">How It Works</div>
+          <h2 class="section-title">
+            Up and running in<br /><span class="grad-text"
+              >under 2 minutes</span
+            >
+          </h2>
+        </div>
+        <div class="steps">
+          <div class="step fade-up" style="transition-delay: 0.1s">
+            <div class="step-num">1</div>
+            <div class="step-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#6366F1"
+                stroke-width="2"
+              >
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5"
+                />
+              </svg>
+            </div>
+            <h3>Connect your email</h3>
+            <p>
+              Link your Gmail or Outlook account with one OAuth click. We never
+              store your emails — all processing is end-to-end encrypted.
+            </p>
+          </div>
+          <div class="step fade-up" style="transition-delay: 0.2s">
+            <div class="step-num">2</div>
+            <div class="step-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#6366F1"
+                stroke-width="2"
+              >
+                <path
+                  d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                />
+                <path
+                  d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                />
+              </svg>
+            </div>
+            <h3>Set your tone & style</h3>
+            <p>
+              Tell MailMind AI how you like to write. Choose a tone preset or
+              paste a sample email — the AI learns your voice in seconds.
+            </p>
+          </div>
+          <div class="step fade-up" style="transition-delay: 0.3s">
+            <div class="step-num">3</div>
+            <div class="step-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#6366F1"
+                stroke-width="2"
+              >
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h3>AI writes, you approve</h3>
+            <p>
+              Open any email and MailMind AI has a reply waiting. Review, edit
+              if needed, and send. Most users send in under 10 seconds.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="text-center fade-up">
+          <div class="section-label">Pricing</div>
+          <h2 class="section-title">Simple, transparent pricing</h2>
+          <p class="section-sub">
+            Start free. Upgrade when you're ready. Cancel any time.
+          </p>
+        </div>
+        <div class="pricing-toggle fade-up">
+          <span class="toggle-label">Monthly</span>
+          <div
+            class="toggle-track"
+            id="billingToggle"
+            onclick="toggleBilling()"
+          >
+            <div class="toggle-thumb"></div>
+          </div>
+          <span class="toggle-label"
+            >Yearly <span class="save-badge">Save 30%</span></span
+          >
+        </div>
+        <div class="pricing-grid fade-up">
+          <!-- Starter -->
+          <div class="price-card">
+            <div class="price-name">Starter</div>
+            <div class="price-amount">
+              <span class="dollar">$</span>
+              <span class="num" id="starterPrice">0</span>
+              <span class="per">/mo</span>
+            </div>
+            <p class="price-desc">
+              Perfect for individuals getting started with AI email.
+            </p>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >50 AI replies per month
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Email summaries
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >3 tone presets
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="x"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" /></svg
+                >Priority inbox scoring
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="x"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" /></svg
+                >Multi-language support
+              </li>
+            </ul>
+            <a href="#" class="btn btn-outline price-cta">Get Started Free</a>
+          </div>
+          <!-- Pro -->
+          <div class="price-card popular">
+            <div class="price-name">Pro</div>
+            <div class="price-amount">
+              <span class="dollar">$</span>
+              <span class="num" id="proPrice">19</span>
+              <span class="per">/mo</span>
+            </div>
+            <p class="price-desc">For professionals who live in their inbox.</p>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Unlimited AI replies
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Advanced summaries
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >All 5 tone modes
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Priority inbox scoring
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >32 languages
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >AI Chat Assistant
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="btn btn-primary price-cta"
+              style="
+                justify-content: center;
+                animation: glowPulse 2.5s infinite;
+              "
+              >Start Pro — 14-day free trial</a
+            >
+          </div>
+          <!-- Business -->
+          <div class="price-card">
+            <div class="price-name">Business</div>
+            <div class="price-amount">
+              <span class="dollar">$</span>
+              <span class="num" id="bizPrice">49</span>
+              <span class="per">/mo</span>
+            </div>
+            <p class="price-desc">
+              For teams who need collaboration and advanced controls.
+            </p>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Everything in Pro
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Team collaboration (5 seats)
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Shared template library
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Auto-draft workflows
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Priority support & SLA
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  class="check"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Custom AI voice training
+              </li>
+            </ul>
+            <a href="#" class="btn btn-outline price-cta">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="text-center fade-up">
+          <div class="section-label">FAQ</div>
+          <h2 class="section-title">
+            Questions we get<br /><span class="grad-text">all the time</span>
+          </h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item fade-up">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Is my email data safe and private?<svg
+                class="faq-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              Absolutely. MailMind AI processes your emails in real-time but
+              never stores them on our servers. All data is encrypted end-to-end
+              using AES-256. We are SOC 2 Type II certified and fully GDPR
+              compliant. Your emails are yours — always.
+            </div>
+          </div>
+          <div class="faq-item fade-up" style="transition-delay: 0.05s">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Does it work with Gmail and Outlook?<svg
+                class="faq-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              Yes — MailMind AI supports Gmail (personal and Google Workspace)
+              and Microsoft Outlook (personal and Microsoft 365). Connection
+              takes under 60 seconds via secure OAuth. Support for Apple Mail
+              and custom IMAP is coming in Q3 2026.
+            </div>
+          </div>
+          <div class="faq-item fade-up" style="transition-delay: 0.1s">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Can I cancel my subscription anytime?<svg
+                class="faq-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              Yes, cancel anytime with no penalties or hidden fees. Your access
+              continues until the end of your billing period. We also offer a
+              14-day free trial on the Pro plan — no credit card required to
+              start.
+            </div>
+          </div>
+          <div class="faq-item fade-up" style="transition-delay: 0.15s">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              How does the AI learn my writing style?<svg
+                class="faq-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              During setup, you can choose a tone preset or paste a few sample
+              emails you've written. The AI analyzes your vocabulary, sentence
+              structure, and formality level. The longer you use it, the more
+              accurately it matches your voice — and you can retrain it at any
+              time from settings.
+            </div>
+          </div>
+          <div class="faq-item fade-up" style="transition-delay: 0.2s">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Which languages does MailMind AI support?<svg
+                class="faq-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              We support 32 languages including English, Spanish, French,
+              German, Italian, Portuguese, Japanese, Korean, Mandarin, Arabic,
+              Hindi, and more. The AI auto-detects the sender's language and can
+              reply in the same language or translate to your preferred one.
+            </div>
+          </div>
+          <div class="faq-item fade-up" style="transition-delay: 0.25s">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Is there a limit on the free Starter plan?<svg
+                class="faq-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              The Starter plan includes 50 AI-generated replies per month,
+              unlimited email summaries, and 3 tone presets — completely free
+              forever. No credit card, no expiry. When you're ready for
+              unlimited replies and advanced features, upgrading to Pro takes
+              one click.
+            </div>
+          </div>
+          <div class="faq-item fade-up" style="transition-delay: 0.3s">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Does MailMind AI send emails automatically?<svg
+                class="faq-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              Never without your approval. MailMind AI drafts replies for you to
+              review — you always have the final say before anything is sent.
+              The auto-draft feature on Business plans queues responses for your
+              review; it doesn't send autonomously.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <div class="final-cta-bg"></div>
+      <div class="container final-cta-content fade-up">
+        <div class="section-label">Get Started</div>
+        <h2>
+          Write better emails in seconds —<br /><span class="grad-text"
+            >powered by AI.</span
+          >
+        </h2>
+        <p>
+          Join 50,000+ professionals who've taken back their mornings. Free
+          forever. No card needed.
+        </p>
+        <div class="final-cta-btns">
+          <a
+            href="#pricing"
+            class="btn btn-primary"
+            style="
+              padding: 16px 40px;
+              font-size: 17px;
+              animation: glowPulse 2.5s infinite;
+            "
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+            Start Free Today
+          </a>
+          <a
+            href="#features"
+            class="btn btn-outline"
+            style="padding: 16px 40px; font-size: 17px"
+            >Explore Features</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="fade-up">
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let's talk</h2>
+            <p style="color: var(--text-muted); line-height: 1.7">
+              Have questions about MailMind AI? Want a custom enterprise quote?
+              Our team typically responds within 2 hours on business days.
+            </p>
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5"
+                />
+              </svg>
+              hello@mailmind.ai
+            </div>
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              Mon–Fri, 9am–6pm EST
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link" title="Email">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" title="LinkedIn">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+                  />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" title="Instagram">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" title="X (Twitter)">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M4 4l16 16M4 20L20 4" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="fade-up" style="transition-delay: 0.15s">
+            <div class="contact-form">
+              <h3
+                style="font-size: 20px; font-weight: 700; margin-bottom: 24px"
+              >
+                Send us a message
+              </h3>
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-input" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Work Email</label>
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="you@company.com"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Topic</label>
+                <select class="form-input form-select">
+                  <option>General inquiry</option>
+                  <option>Enterprise pricing</option>
+                  <option>Technical support</option>
+                  <option>Partnership</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-input form-textarea"
+                  placeholder="Tell us how we can help..."
+                ></textarea>
+              </div>
+              <button
+                class="btn btn-primary"
+                style="width: 100%; justify-content: center"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo" style="text-decoration: none">
+              <div class="nav-logo-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+              </div>
+              MailMind<span style="color: var(--indigo-soft)">AI</span>
+            </a>
+            <p>
+              AI-powered email assistant that reads, replies, and prioritizes
+              your inbox — so you can focus on what actually matters.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#screenshots">Screenshots</a></li>
+              <li><a href="#how">How It Works</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 MailMind AI. All rights reserved.</p>
+          <div class="footer-social">
+            <a href="#" title="Email"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5"
+                /></svg
+            ></a>
+            <a href="#" title="LinkedIn"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" /></svg
+            ></a>
+            <a href="#" title="Instagram"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg
+            ></a>
+            <a href="#" title="X (Twitter)"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M4 4l16 16M4 20L20 4" /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
