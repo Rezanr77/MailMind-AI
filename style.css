@@ -300,4 +300,5 @@ body{background:var(--bg);color:var(--text);transition:background 0.4s ease,colo
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;text-align:center}
   .benefit-stats-grid{grid-template-columns:1fr 1fr}
+  #mobileControls { display: flex !important; }
 }
